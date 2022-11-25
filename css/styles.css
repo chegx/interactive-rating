@@ -1,0 +1,151 @@
+:root {
+  --orange: hsl(25, 97%, 53%);
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(217, 12%, 63%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --ver-dark-blue: hsl(216, 12%, 8%);
+}
+
+html {
+  font-size: 10px;
+  font-family: 'Overpass', sans-serif;
+}
+
+body {
+  background-color: var(--ver-dark-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+main {
+  background-color: var(--dark-blue);
+  padding: 2.5rem 2.5rem 3rem;
+  width: 28rem;
+  border-radius: 1.5rem;
+}
+
+.star {
+  width: 1.4rem;
+  height: 1.3rem;
+}
+
+.star-btn {
+  cursor: auto;
+}
+
+h1 {
+  font-size: 2.4rem;
+  color: var(--white);
+}
+
+p {
+  font-size: 1.4rem;
+  color: var(--light-grey);
+  line-height: 1.6;
+}
+
+button {
+  font-family: 'Overpass', sans-serif;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: space-between;
+  margin: 2.5rem 0 2rem;
+}
+
+.btn {
+  border-radius: 50%;
+  font-size: 1.5rem;
+  color: var(--light-grey);
+  background-color: hsl(216, 12%, 25%);
+  width: 4.2rem;
+  height: 4.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rating-btn:hover {
+  background-color: var(--light-grey);
+  color: var(--white);
+}
+
+.submit-btn {
+  background-color: var(--orange);
+  border-radius: 3rem;
+  color: var(--white);
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+  padding: 1.3rem;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.submit-btn:hover {
+  background-color: var(--white);
+  color: var(--orange);
+}
+
+.thank-card {
+  text-align: center;
+}
+
+.d-none {
+  display: none;
+}
+
+.pos-terminal {
+  width: 47%;
+  margin: 3% 0 5%;
+}
+
+.info {
+  background-color: hsl(216, 12%, 20%);
+  border-radius: 3rem;
+  color: var(--orange);
+  display: inline-block;
+  padding: 0.5rem 2rem 0.4rem;
+}
+
+.thank-card h1 {
+  margin: 3.5% 0 1%;
+}
+
+.thank-card p {
+  margin-bottom: 4.5%;
+}
+
+@media (min-width:1200px) {
+  main {
+    width: 34rem;
+    padding: 3.2rem 4rem 3.2rem 3.2rem;
+  }
+
+  .star {
+    width: 1.7rem;
+    height: 1.6rem;
+  }
+
+  h1 {
+    font-size: 2.8rem;
+    margin: 3rem 0 0;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    width: 5rem;
+    height: 5rem;
+    margin-bottom: 1rem;
+  }
+}
