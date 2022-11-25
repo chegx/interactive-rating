@@ -75,7 +75,7 @@ button {
 }
 
 .rating-btn:hover {
-  background-color: var(--light-grey);
+  background-color: var(--orange);
   color: var(--white);
 }
 
@@ -99,10 +99,6 @@ button {
   text-align: center;
 }
 
-.d-none {
-  display: none;
-}
-
 .pos-terminal {
   width: 47%;
   margin: 3% 0 5%;
@@ -124,6 +120,17 @@ button {
   margin-bottom: 4.5%;
 }
 
+/* === JS CLASSES === */
+.selected-btn {
+  background-color: var(--light-grey);
+  color: var(--white);
+}
+
+.d-none {
+  display: none;
+}
+
+/* === DESKTOP === */
 @media (min-width:1200px) {
   main {
     width: 34rem;
