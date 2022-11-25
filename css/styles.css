@@ -79,6 +79,11 @@ button {
   color: var(--white);
 }
 
+.rating-btn:focus {
+  background-color: var(--light-grey);
+  color: var(--white);
+}
+
 .submit-btn {
   background-color: var(--orange);
   border-radius: 3rem;
@@ -121,11 +126,6 @@ button {
 }
 
 /* === JS CLASSES === */
-.selected-btn {
-  background-color: var(--light-grey);
-  color: var(--white);
-}
-
 .d-none {
   display: none;
 }
