@@ -4,11 +4,9 @@ for (var i = 0; i < 5; i++) {
     var number = Number(this.innerHTML);
     document.querySelector("span").innerHTML = number;
 
-    for (var i = 0; i < 5; i++) { //changes all the buttons to grey and then changes the clicked button to orange
-      document.querySelectorAll(".rating-btn")[i].style.backgroundColor = "hsl(216, 12%, 25%)";
-      document.querySelectorAll(".rating-btn")[i].style.color = "var(--light-grey)";
-      this.style.backgroundColor = "var(--orange)";
-      this.style.color = "var(--white)";
+    for (var i = 0; i < 5; i++) { 
+      document.querySelectorAll(".rating-btn")[i].classList.remove("selected-btn");
+      this.classList.add("selected-btn");
     }
 
     if (number > 0) { //submits only when rating button is clicked
