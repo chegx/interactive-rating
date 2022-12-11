@@ -21,30 +21,40 @@
       <img class="star" src="images/icon-star.svg" alt="" aria-hidden="true">
     </div>
 
-    <form>
+    <form onsubmit="return false">
       <fieldset>
         <legend>How did we do?</legend>
         <p>Please let us know how we did with your support request. All feedback is appreciated
           to help us improve our offering!</p>
 
-        <div class="form-radio-btn">
-          <input type="radio" id="oneStar" name="feedback" value="1">
-          <label for="oneStar">1</label>
+         <ul>
+          <li>
+            <input type="radio" id="one" name="feedback" value="1">
+            <label for="one">1</label>
+          </li>
 
-          <input type="radio" id="twoStars" name="feedback" value="2">
-          <label for="twoStars">2</label>
+          <li>
+            <input type="radio" id="two" name="feedback" value="2">
+            <label for="two">2</label>
+          </li>
 
-          <input type="radio" id="threeStars" name="feedback" value="3">
-          <label for="threeStars">3</label>
+          <li>
+            <input type="radio" id="three" name="feedback" value="3">
+            <label for="three">3</label>
+          </li>
 
-          <input type="radio" id="fourStars" name="feedback" value="4">
-          <label for="fourStars">4</label>
+          <li>
+            <input type="radio" id="four" name="feedback" value="4">
+            <label for="four">4</label>
+          </li>
 
-          <input type="radio" id="fiveStars" name="feedback" value="5">
-          <label for="fiveStars">5</label>
-        </div>
+          <li>
+            <input type="radio" id="five" name="feedback" value="5">
+            <label for="five">5</label>
+          </li>
+        </ul>
 
-        <button type="button" name="feedback">Submit</button>
+        <button type="submit">Submit</button>
       </fieldset>
     </form>
 
