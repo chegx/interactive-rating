@@ -62,14 +62,23 @@ p {
   line-height: 1.6;
 }
 
-.form-radio-btn {
+ul {
   display: flex;
   justify-content: space-between;
   margin: 2.5rem 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  position: relative;
 }
 
 input {
-  display: none;
+  position: absolute;
+  transform: translate(70%, 70%) scale(3); /* easy to tap for screen-readers */
+  cursor: pointer;
+  opacity: 0;
 }
 
 label {
@@ -88,6 +97,11 @@ label {
 }
 
 label:hover {
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+input:hover+label {
   background-color: var(--orange);
   color: var(--white);
 }
