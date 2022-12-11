@@ -17,21 +17,36 @@
   <!-- Rating state start -->
   <main class="rating-card">
 
-  <button class="btn star-btn" type="button" name="button"><img class="star" src="images/icon-star.svg" alt="icon star"></button>
-
-    <h1>How did we do?</h1>
-    <p>Please let us know how we did with your support request. All feedback is appreciated
-      to help us improve our offering!</p>
-
-    <div class="btn-group">
-      <button class="btn rating-btn" type="button" name="button">1</button>
-      <button class="btn rating-btn" type="button" name="button">2</button>
-      <button class="btn rating-btn" type="button" name="button">3</button>
-      <button class="btn rating-btn" type="button" name="button">4</button>
-      <button class="btn rating-btn" type="button" name="button">5</button>
+    <div class="star-bg">
+      <img class="star" src="images/icon-star.svg" alt="" aria-hidden="true">
     </div>
 
-    <button class="submit-btn" type="button" name="button">Submit</button>
+    <form>
+      <fieldset>
+        <legend>How did we do?</legend>
+        <p>Please let us know how we did with your support request. All feedback is appreciated
+          to help us improve our offering!</p>
+
+        <div class="form-radio-btn">
+          <input type="radio" id="oneStar" name="feedback" value="1">
+          <label for="oneStar">1</label>
+
+          <input type="radio" id="twoStars" name="feedback" value="2">
+          <label for="twoStars">2</label>
+
+          <input type="radio" id="threeStars" name="feedback" value="3">
+          <label for="threeStars">3</label>
+
+          <input type="radio" id="fourStars" name="feedback" value="4">
+          <label for="fourStars">4</label>
+
+          <input type="radio" id="fiveStars" name="feedback" value="5">
+          <label for="fiveStars">5</label>
+        </div>
+
+        <button type="button" name="feedback">Submit</button>
+      </fieldset>
+    </form>
 
   </main>
   <!-- Rating state end -->
@@ -46,7 +61,7 @@
   </main>
   <!-- Thank you state end -->
 
-<script src="index.js" charset="utf-8"></script>
+  <script src="index.js" charset="utf-8"></script>
 </body>
 
 </html>
